@@ -25,7 +25,8 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: var(--color-secondary)
+    color: var(--color-secondary);
+    font-size: 1.1rem;
 }
 
 a:active {
@@ -54,10 +55,19 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    color: var(--color-secondary);
+    text-decoration: underline;
+    text-decoration-color: var(--color-primary);
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
 p {
     font-family: "Montserrat", Arial, serif;
     padding: 5px;
 }
+
 
 .container {
     width: 65%;
@@ -113,17 +123,22 @@ p {
 }
 
 .about {
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    flex-direction: column;
-    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr, 2fr;
+}
+
+.about h2 {
+    grid-row: 1;
+    grid-column: 1 /span 2;
 }
 .about img {
     width: 80%;
     margin: 0 auto;
     padding: 10px;
     border-radius: 20px;
+    grid-column: 1;
+    grid-row: 2;
 }
 
 .projects p {
@@ -211,4 +226,34 @@ p {
     font-weight: 500;
     color: var(--color-secondary);
 
+}
+
+.skills-colummns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.skills-columns p {
+    text-align: left;
+}
+
+.columns {
+    margin: 30px 0;
+}
+
+.footer {
+    width: 100%;
+    background-color: white;
+    border-top: 3px solid var(--color-primary);
+    margin-top: 50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer img {
+    width: 30%;
 }

@@ -16,6 +16,7 @@ html {
     background-image: url("img/css-pattern-by-magicpattern.png");
     font-family: "Oswald", Arial, sans-serif;
     line-height: 1.5;
+    scroll-behavior: smooth;
 }
 
 a {

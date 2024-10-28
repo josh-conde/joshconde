@@ -2,7 +2,7 @@
 
 :root {
     --color-primary: rgb(18, 46, 68);
-    --color-secondary: rgb(120, 190, 178);
+    --color-secondary: #78beb2;
     --color-tertiary: rgb(152, 179, 198);
 }
 
@@ -13,7 +13,7 @@
 }
 
 html {
-    background-color: #fff;
+    background-image: url("img/css-pattern-by-magicpattern.png");
     font-family: "Oswald", Arial, sans-serif;
     line-height: 1.5;
 }
@@ -50,7 +50,8 @@ h1 {
 
 h2 {
     font-size: 28px;
-    color: var(--color-secondary)
+    color: var(--color-secondary);
+    text-align: center;
 }
 
 p {
@@ -63,7 +64,7 @@ p {
     margin: 0 auto;
     padding: 20px;
     border-radius: 20px;
-    border: 3px solid var(--color-tertiary);
+    border: 3px solid var(--color-primary);
     background-color: rgb(243, 241, 247);
     
 }
@@ -76,6 +77,8 @@ p {
     padding: 10px 50px; 
     align-items: center;
     margin-bottom: 50px; 
+    background-color: #fff;
+    border-bottom: 3px solid var(--color-primary);
 }
 
 .right-nav li  {
@@ -102,16 +105,77 @@ p {
 }
 
 .down-arrow {
-    margin: 30px auto;
+    margin: 50px auto;
     width: 1px;
-    color: var(--color-secondary);
+    color: var(--color-primary);
+    display: flex;
+    justify-content: center;
 }
+
 .about {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    
 }
 .about img {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding: 10px;
+    border-radius: 20px;
+}
+
+.projects p {
+    text-align: center;
+}
+
+.individual-projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+
+.card {
+    width: 100%;
+    border: 3px solid var(--color-secondary);
+    border-radius: 20px;
+    
+}
+
+.project1 {
+    background-image: url(img/blue-purpose-logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.project2 {
+    background-image: url(img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.project3 {
+    background-image: url(img/customcolor_logo_transparent_background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.project4 {
+    background-image: url(img/condes-connections-high-resolution-logo-transparent.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.project5 {
+    grid-row: 3;
+    background-image: url(img/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }

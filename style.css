@@ -242,6 +242,26 @@ p {
     margin: 30px 0;
 }
 
+.contact i {
+    color: var(--color-primary);
+}
+
+.connect {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.connect h3 {
+    grid-column: 1 /span 2;
+}
+
+.connect i {
+    margin-right: 5px;
+}
+
 .footer {
     width: 100%;
     background-color: white;
@@ -254,6 +274,57 @@ p {
     align-items: center;
 }
 
+.footer h4 {
+    color: var(--color-secondary)
+}
+
 .footer img {
-    width: 30%;
+    width: 20%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 2fr;
+    }
+
+    .hero img {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .individual-projects {
+        grid-template-columns: 1fr;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr 2fr 2fr;
+    }
+    
+    .about h2 {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .about img {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .footer img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 960px) {
+    .container {
+        width: 90%;
+    }
 }

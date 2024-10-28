@@ -132,16 +132,27 @@ p {
 .individual-projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 10px;
-    justify-items: center;
 }
 
 .card {
     width: 100%;
     border: 3px solid var(--color-secondary);
     border-radius: 20px;
-    
+    padding: 5px;
+    background-color: #fff;
+}
+
+.card:hover{
+    opacity: .9;
+    border: 3px solid var(--color-primary);
+    transition: border .6s ease-in;
+}
+
+.projects a {
+    font-weight: 500;
+    color: var(--color-secondary);
 }
 
 .project1 {
@@ -172,10 +183,21 @@ p {
     background-position: center;
 }
 
-.project5 {
-    grid-row: 3;
-    background-image: url(img/logo.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+.hidden {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.visible {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.hidden:hover{
+    cursor: pointer;
+}
+
+.fade-background {
+    background-color: rgba(255, 255, 255, 0.823);
+    background-blend-mode: overlay;
 }

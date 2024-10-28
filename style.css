@@ -284,6 +284,9 @@ p {
 }
 
 @media (max-width: 768px) {
+    h1 {
+        font-size: 1.7rem;
+    }
     .container {
         width: 90%;
     }

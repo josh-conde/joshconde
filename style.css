@@ -293,7 +293,7 @@ p {
 
     .hero {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr 2fr;
+        
     }
 
     .hero img {
@@ -307,7 +307,6 @@ p {
 
     .about {
         grid-template-columns: 1fr;
-        grid-template-rows: .5fr 2fr 2fr;
     }
     
     .about h2 {
@@ -324,6 +323,11 @@ p {
 
     .footer img {
         width: 50%;
+    }
+
+    .right-nav li  {
+        padding: 5px 10px;
+        font-size: 1.1rem; 
     }
 }
 

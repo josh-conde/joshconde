@@ -113,7 +113,7 @@ p {
     grid-column: 2;
     padding: 10px;
     border-radius: 20px;
-    
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
 }
 
 .down-arrow {
@@ -141,6 +141,7 @@ p {
     border-radius: 20px;
     grid-column: 1;
     grid-row: 2;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
 }
 
 .projects p {
@@ -178,6 +179,7 @@ p {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
 }
 
 .project2 {
@@ -185,6 +187,7 @@ p {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
 }
 
 .project3 {
@@ -192,6 +195,7 @@ p {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
 }
 
 .project4 {
@@ -199,6 +203,7 @@ p {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
 }
 
 .hidden {

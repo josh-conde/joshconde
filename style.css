@@ -90,6 +90,7 @@ p {
     margin-bottom: 50px; 
     background-color: #fff;
     border-bottom: 3px solid var(--color-primary);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
 }
 
 .right-nav li  {

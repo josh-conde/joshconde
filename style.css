@@ -247,6 +247,32 @@ p {
 
 .columns {
     margin: 30px 0;
+    text-align: center;
+    
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px; 
+}
+
+.icon-list {
+    display: grid;
+    grid-template-rows: repeat(11, 1fr);
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: last baseline;
+
+}
+
+.icon-list-names {
+    display: grid;
+    grid-template-rows: repeat(11, 1fr);
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: first baseline;
 }
 
 .contact i {
